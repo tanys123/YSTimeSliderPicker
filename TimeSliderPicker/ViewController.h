@@ -13,6 +13,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (weak, nonatomic) IBOutlet YSTimeSelector *timeSelector;
+@property (weak, nonatomic) IBOutlet YSTimeSelector *timeSelector2;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel2;
 
 @end
 

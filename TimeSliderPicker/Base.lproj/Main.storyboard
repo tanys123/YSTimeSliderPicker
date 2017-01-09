@@ -24,46 +24,70 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfm-1x-aHr">
                                 <rect key="frame" x="16" y="53" width="343" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="LCb-gn-dhk"/>
+                                    <constraint firstAttribute="height" constant="21" id="3Ua-R0-SVm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yy2-r0-5et" customClass="YSTimeSelector">
-                                <rect key="frame" x="0.0" y="308" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="82" width="375" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="FNY-ca-RkM"/>
+                                    <constraint firstAttribute="height" constant="50" id="P7b-52-uar"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGF-iB-F82">
                                 <rect key="frame" x="123" y="629" width="129" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="7fP-Fy-SFz"/>
-                                    <constraint firstAttribute="width" constant="129" id="Eov-QB-62a"/>
+                                    <constraint firstAttribute="height" constant="30" id="03p-No-OQx"/>
+                                    <constraint firstAttribute="width" constant="129" id="lVg-fx-5sO"/>
                                 </constraints>
                                 <state key="normal" title="Set Time"/>
                                 <connections>
                                     <action selector="setTimeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z8C-EJ-XtJ"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qug-uJ-siC" customClass="YSTimeSelector">
+                                <rect key="frame" x="0.0" y="211" width="375" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ltQ-2b-vnR"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Bx-jJ-tC2">
+                                <rect key="frame" x="16" y="182" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="4rx-Et-GHK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="hfm-1x-aHr" secondAttribute="trailing" constant="16" id="3s0-fa-QZM"/>
-                            <constraint firstItem="Yy2-r0-5et" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IfJ-sx-iqf"/>
-                            <constraint firstItem="hfm-1x-aHr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="IgQ-AP-kSG"/>
-                            <constraint firstItem="hfm-1x-aHr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="PYH-A1-zaJ"/>
-                            <constraint firstItem="Yy2-r0-5et" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QKa-wV-vNS"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EGF-iB-F82" secondAttribute="bottom" constant="8" id="UAj-g2-z5A"/>
-                            <constraint firstItem="EGF-iB-F82" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WJr-Q8-hJw"/>
-                            <constraint firstAttribute="trailing" secondItem="Yy2-r0-5et" secondAttribute="trailing" id="iy9-c2-zFD"/>
+                            <constraint firstItem="hfm-1x-aHr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="5mg-QQ-klU"/>
+                            <constraint firstAttribute="trailing" secondItem="hfm-1x-aHr" secondAttribute="trailing" constant="16" id="9hP-Wk-GXf"/>
+                            <constraint firstItem="0Bx-jJ-tC2" firstAttribute="top" secondItem="Yy2-r0-5et" secondAttribute="bottom" constant="50" id="EF9-ER-RIN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EGF-iB-F82" secondAttribute="bottom" constant="8" id="G3U-lq-6Er"/>
+                            <constraint firstAttribute="trailing" secondItem="0Bx-jJ-tC2" secondAttribute="trailing" constant="16" id="GcI-9K-vxa"/>
+                            <constraint firstItem="0Bx-jJ-tC2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="N36-7d-e97"/>
+                            <constraint firstItem="Yy2-r0-5et" firstAttribute="top" secondItem="hfm-1x-aHr" secondAttribute="bottom" constant="8" id="OT7-hG-NwS"/>
+                            <constraint firstAttribute="trailing" secondItem="Yy2-r0-5et" secondAttribute="trailing" id="SXx-Pc-jk3"/>
+                            <constraint firstItem="Yy2-r0-5et" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZIW-5J-tN1"/>
+                            <constraint firstItem="EGF-iB-F82" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZpV-1p-ju6"/>
+                            <constraint firstItem="qug-uJ-siC" firstAttribute="top" secondItem="0Bx-jJ-tC2" secondAttribute="bottom" constant="8" id="hPR-6S-swF"/>
+                            <constraint firstAttribute="trailing" secondItem="qug-uJ-siC" secondAttribute="trailing" id="q9b-8Y-jLB"/>
+                            <constraint firstItem="hfm-1x-aHr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="rIj-at-RIM"/>
+                            <constraint firstItem="qug-uJ-siC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uLt-qJ-XQJ"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="timeLabel" destination="hfm-1x-aHr" id="yHK-FH-rkr"/>
+                        <outlet property="timeLabel2" destination="0Bx-jJ-tC2" id="loj-Nh-ZPm"/>
                         <outlet property="timeSelector" destination="Yy2-r0-5et" id="x2c-Nv-Abt"/>
+                        <outlet property="timeSelector2" destination="qug-uJ-siC" id="2rh-Ud-WYp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
