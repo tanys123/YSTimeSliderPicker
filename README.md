@@ -3,6 +3,7 @@ A dragging range time slider picker. Using drag to select range of time.
 
 ## Example
 [[https://github.com/tanys123/YSTimeSliderPicker/master/TimeSliderPicker/Example/TimeSlider.gif|alt=octocat]]
+![Time Slider Example](/TimeSliderPicker/Example/TimeSlider.gif?raw=true "Time Slider Example")
 
 ## Notice
 The source code is not open-source friendly as it is directly export from my original project and it suit my need as the time i writing this. I have no time to maintain and make this source code more open-source friendly. However, my intention to open-source it is because i seem can't find a similar time range picker function at the time before i want to write myself, so i would like to help other developers that wanted the same functions to avoid the hassle. You can use this project if it directly suit your need or you can take this as a foundation of your own building block.
