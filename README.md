@@ -2,7 +2,6 @@
 A dragging range time slider picker. Using drag to select range of time.
 
 ## Example
-[[https://github.com/tanys123/YSTimeSliderPicker/master/TimeSliderPicker/Example/TimeSlider.gif|alt=octocat]]
 ![Time Slider Example](/TimeSliderPicker/Example/TimeSlider.gif?raw=true "Time Slider Example")
 
 ## Notice
