@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YSTimeSelector.h"
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (weak, nonatomic) IBOutlet YSTimeSelector *timeSelector;
 
 @end
 

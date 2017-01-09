@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <YSTimeSelectorDelegate>
 
 @end
 
@@ -16,14 +16,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    _timeSelector.delegate = self;
+    [self setTimeLabel:_timeSelector.fromTime toTime:_timeSelector.toTime];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setTimeLabel:(YSTime *)fromTime toTime:(YSTime *)toTime
+{
+    _timeLabel.text = [NSString stringWithFormat:@"%02ld:%02ld - %02ld:%02ld", fromTime.hour, fromTime.minute, toTime.hour, toTime.minute];
 }
+
+- (IBAction)setTimeTapped:(id)sender {
+    YSTime *fromTime = [[YSTime alloc] initWith24HourFormat:13 minute:30];
+    YSTime *toTime = [[YSTime alloc] initWith24HourFormat:15 minute:0];
+    
+    [_timeSelector setFromTime:fromTime toTime:toTime scrollTo:YES];
+    
+    [self setTimeLabel:fromTime toTime:toTime];
+}
+
+#pragma mark - YSTimeSelectorDelegate
+- (void)ysTimeSelector:(YSTimeSelector *)timeSelector onChangeFromTime:(YSTime *)fromTime toTime:(YSTime *)toTime
+{
+    [self setTimeLabel:fromTime toTime:toTime];
+}
+
 
 
 @end
