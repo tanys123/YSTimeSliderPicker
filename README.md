@@ -1,15 +1,5 @@
-<snippet>
+## YSTimeSliderPicker
 
-<content>
-	<![CDATA[
-		# ${1:YSTimeSliderPicker}
-		A dragging range time slider picker.
+## Description
 
-		## Usage
-		Download and run project
-		]]>
-</content>
-
-<tabTrigger>readme</tabTrigger>
-
-</snippet>
+A dragging range time slider picker. Using drag to select range of time.
